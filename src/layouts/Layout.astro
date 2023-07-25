@@ -51,7 +51,7 @@ const { title } = Astro.props as Props;
 					</div>
 					<div id="menu" class="navlinks">
 						<a href="/aboutus">About Us</a>
-						<a href="#">Contact</a>
+						<a href="/contact">Contact</a>
 						<a href="#">Merch</a>
 						<a href="#">Other Pages</a>
 					</div>
@@ -69,6 +69,7 @@ const { title } = Astro.props as Props;
 		font-family: Arial, sans-serif;
 		margin: 0;
 		padding: 0;
+		color: #ffffff;
 	}
 
 	.container {
@@ -120,16 +121,16 @@ const { title } = Astro.props as Props;
 </style>
 
 <script is:inline>
-	const burger = document.getElementById("hamburger");
+const burger = document.getElementById("hamburger");
 
-	function burgerClick() {
-		const menu = document.getElementById("menu");
+function burgerClick() {
+	const menu = document.getElementById("menu");
 
-		if (menu.style.display === "none") {
-			menu.style.display = "flex";
-		} else {
-			menu.style.display = "none";
-		}
+	if (menu.style.display === "none") {
+		menu.style.display = "flex";
+	} else {
+		menu.style.display = "none";
 	}
-	burger.addEventListener("click", burgerClick); //hamburguer
+}
+burger.addEventListener("click", burgerClick); //hamburguer
 </script>
