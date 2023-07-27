@@ -6,11 +6,14 @@ import Card from "../components/Card.astro";
 <Layout title="Arsenicxxx">
 	<main>
 		<h1><span class="titulo">Töxic Squad Official Website</span></h1>
+		<!-- este es el titulo de la pagina-->
 		<p class="instructions">
-			Welcome to the <strong>"Töxic Squad"</strong>official site, here you
-			will find links to Music Platforms, Social Media, Merch, etc.
+			Bienvenidos al sitio oficial del <strong>"Töxic Squad"</strong>,
+			aqui podras encontrar links a nuestras Plataformas Musicales, Redes
+			Sociales, Merch, etc. <!--este es el texto principal-->
 		</p>
 		<ul role="list" class="grid-card">
+			<!-- estas son las tarjetas-->
 			<Card
 				href="https://linktr.ee/arsenicxxx/"
 				title="Arsenicxxx"
@@ -35,7 +38,7 @@ import Card from "../components/Card.astro";
 	}
 	.grid-card {
 		display: grid;
-		grid-template-columns: 1fr 1fr; /* Dos columnas de ancho igual */
+		grid-template-columns: 1fr 1fr;
 		grid-gap: 10px;
 		max-width: 768px;
 	}
