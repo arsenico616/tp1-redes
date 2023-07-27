@@ -39,41 +39,6 @@ import Card from "../components/Card.astro";
             </p>
             <button onclick="ocultarPopup()">Cerrar</button>
         </div>
-
-        <script>
-            function validarFormulario() {
-                // Obtener los campos del formulario
-                const nombre = document.getElementById("nombre").value;
-                const apellido = document.getElementById("apellido").value;
-                const mail = document.getElementById("mail").value;
-                const mensaje = document.getElementById("mensaje").value;
-
-                // Validar si los campos están vacíos
-                if (
-                    nombre === "" ||
-                    apellido === "" ||
-                    mail === "" ||
-                    mensaje === ""
-                ) {
-                    // Mostrar el pop-up y la capa oscura de fondo
-                    document.getElementById("miPopup").style.display = "block";
-                    document.getElementsByClassName(
-                        "overlay"
-                    )[0].style.display = "block";
-                    return false; // Detener el envío del formulario
-                }
-
-                // Si los campos están completos, el formulario se enviará
-                return true;
-            }
-
-            function ocultarPopup() {
-                // Ocultar el pop-up y la capa oscura de fondo
-                document.getElementById("miPopup").style.display = "none";
-                document.getElementsByClassName("overlay")[0].style.display =
-                    "none";
-            }
-        </script>
     </body>
 </Layout>
 <style>
